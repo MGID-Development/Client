@@ -7,6 +7,7 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#FDB03C",
+      contrastText: "#ECECEE",
     },
     secondary: {
       main: "#051829",
@@ -29,10 +30,10 @@ const theme = createTheme({
     MuiLink: {
       styleOverrides: {
         root: {
-          color: "#ECECEE",
+          color: "inherit",
           textDecoration: "none",
           "&:hover": {
-            color: "#FDB03C",
+            color: "inherit",
           },
         },
       },
