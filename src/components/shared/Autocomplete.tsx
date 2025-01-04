@@ -13,7 +13,7 @@ const CustomAutocomplete = ({ options }) => {
           style={{
             backgroundColor: theme.palette.secondary.light,
             color: theme.palette.primary.contrastText,
-            padding: "0 8px",
+            padding: "0 4px",
           }}
         >
           <Box
