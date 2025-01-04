@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import { Box, useTheme } from "@mui/material";
 import Filter from "./Filter";
 import Hero from "./Hero";
+import PromoAndNews from "./PromoAndNews";
 const Home = () => {
   const theme = useTheme();
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Filter />
+      <PromoAndNews />
     </Box>
   );
 };

@@ -7,10 +7,10 @@ const SearchBar = () => {
     <Box
       sx={{
         display: "flex",
-        gap: "1rem",
+        gap: "2rem",
         alignItems: "center",
-        overflow: "hidden",
         maxHeight: "44px",
+        position: "relative",
       }}
     >
       <Box
@@ -29,10 +29,13 @@ const SearchBar = () => {
         <Input
           type="text"
           placeholder="Wyszukaj"
-          sx={{ maxHeight: "44px", border: "none", flexGrow: 1 }}
+          sx={{ maxHeight: "44px", border: "none", width: "90%" }}
         />
         <SearchIcon
           style={{
+            position: "absolute",
+            marginLeft: "1rem",
+            right: "-1px",
             border: `solid 12px ${theme.palette.secondary.main}`,
             borderRadius: "999999px",
             padding: "0.5rem",

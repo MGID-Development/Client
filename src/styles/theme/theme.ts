@@ -1,5 +1,20 @@
 import { createTheme } from "@mui/material/styles";
 
+declare module "@mui/material/styles" {
+  interface Palette {
+    custom?: {
+      gray: string;
+      grayText: string;
+    };
+  }
+
+  interface PaletteOptions {
+    custom?: {
+      gray: string;
+      grayText: string;
+    };
+  }
+}
 const theme = createTheme({
   typography: {
     fontFamily: '"Inter", sans-serif',
@@ -24,6 +39,10 @@ const theme = createTheme({
     },
     background: {
       default: "#ECECEE",
+    },
+    custom: {
+      gray: "#CBCBCB",
+      grayText: "#707070",
     },
   },
   components: {
