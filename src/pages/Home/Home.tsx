@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import { Box, useTheme } from "@mui/material";
-
+import Filter from "./Filter";
+import Hero from "./Hero";
 const Home = () => {
   const theme = useTheme();
   return (
@@ -10,7 +11,8 @@ const Home = () => {
       }}
     >
       <Navbar />
-      <h1>Home</h1>
+      <Hero />
+      <Filter />
     </Box>
   );
 };

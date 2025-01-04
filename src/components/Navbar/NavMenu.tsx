@@ -57,7 +57,9 @@ const NavigationMenu = () => {
                   }}
                 >
                   {label}
-                  {subLinks && <ArrowIcon />}
+                  {subLinks && (
+                    <ArrowIcon style={{ transform: "rotate(90deg)" }} />
+                  )}
                 </Link>
               }
             >
