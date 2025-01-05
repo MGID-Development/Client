@@ -15,6 +15,7 @@ const ShopItem = ({ item }) => {
         position: "relative",
         borderRadius: "8px",
         overflow: "hidden",
+        backgroundColor: "white",
       }}
     >
       {(item.status === "new" || item.status === "promo") && (

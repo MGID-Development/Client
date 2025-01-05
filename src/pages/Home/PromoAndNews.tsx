@@ -1,8 +1,9 @@
 import { Box, Typography } from "@mui/material";
 
 import ShopItem from "@/components/shared/ShopItem";
+import Slider from "@/components/shared/Slider";
+import { products } from "@/config/mockups/products";
 import BusinessMan from "@/images/pictures/Caucasian.png";
-import Kolo from "@/images/pictures/Kolo.png";
 import theme from "@/styles/theme/theme";
 const PromoAndNews = () => {
   return (
@@ -46,56 +47,22 @@ const PromoAndNews = () => {
         <Typography variant="h4">NOWOŚCI I PROMOCJE</Typography>
       </Box>
       <Box sx={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-        <ShopItem
-          item={{
-            status: "new",
-            img: Kolo,
-            name: "Koszula",
-            price: "99.99",
-            oldPrice: "109.99",
-            model: "Koszula w kratę",
+        <Slider
+          width={4}
+          buttonSx={{
+            backgroundColor: "white",
+            border: "none",
+            cursor: "pointer",
+            "&:hover": {
+              backgroundColor: "rgba(0, 0, 0, 0.1)",
+              borderRadius: "50%",
+            },
           }}
-        />
-        <ShopItem
-          item={{
-            status: "new",
-            img: Kolo,
-            name: "Koszula",
-            price: "99.99",
-            oldPrice: "109.99",
-            model: "Koszula w kratę",
-          }}
-        />
-        <ShopItem
-          item={{
-            status: "promo",
-            img: Kolo,
-            name: "Koszula",
-            price: "99.99",
-            oldPrice: "109.99",
-            model: "Koszula w kratę",
-          }}
-        />
-        <ShopItem
-          item={{
-            status: "new",
-            img: Kolo,
-            name: "Koszula",
-            price: "99.99",
-            oldPrice: "109.99",
-            model: "Koszula w kratę",
-          }}
-        />
-        <ShopItem
-          item={{
-            status: "promo",
-            img: Kolo,
-            name: "Koszula",
-            price: "99.99",
-            oldPrice: "109.99",
-            model: "Koszula w kratę",
-          }}
-        />
+        >
+          {products.map((item, index) => (
+            <ShopItem key={index} item={item} />
+          ))}
+        </Slider>
       </Box>
     </Box>
   );
