@@ -1,5 +1,6 @@
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import { Box, useTheme } from "@mui/material";
+import BrandSlider from "./BrandSlider";
 import Categories from "./Categories";
 import Filter from "./Filter";
 import Hero from "./Hero";
@@ -17,6 +18,7 @@ const Home = () => {
       <Filter />
       <PromoAndNews />
       <Categories />
+      <BrandSlider />
     </Box>
   );
 };
