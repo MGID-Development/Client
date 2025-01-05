@@ -29,7 +29,7 @@ const PromoAndNews = () => {
           left: "1%",
           bottom: "0",
           position: "absolute",
-          display: { xs: "none", md: "block" },
+          display: { xs: "none", lg: "block" },
         }}
       />
       <Box
@@ -48,7 +48,7 @@ const PromoAndNews = () => {
       </Box>
       <Box sx={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
         <Slider
-          width={4}
+          limit={4}
           buttonSx={{
             backgroundColor: "white",
             border: "none",
