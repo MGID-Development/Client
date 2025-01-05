@@ -59,7 +59,7 @@ const Categories = () => {
                     alignItems: "center",
                     backgroundColor: theme.palette.primary.contrastText,
                     px: "2rem",
-                    py: "1rem",
+                    py: "0.5rem",
                     gap: "3rem",
                     boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
                   }}
