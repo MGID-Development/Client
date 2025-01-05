@@ -28,7 +28,7 @@ const categories = [
   },
   {
     title: "UKŁAD WYDECHOWY",
-    icon: Acumulator,
+    icon: Tools,
   },
   {
     title: "UKŁAD ZAWIESZENIA",
