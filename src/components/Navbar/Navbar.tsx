@@ -1,86 +1,11 @@
 import Image from "@/components/shared/Image";
-import { phoneNumber } from "@/config/contact";
-import {
-  AccountIcon,
-  CartIcon,
-  FavouriteIcon,
-  PhoneCallingIcon,
-} from "@/images/icons";
+import { AccountIcon, CartIcon, FavouriteIcon } from "@/images/icons";
 import Logo from "@/images/logos/Logo.svg";
-import {
-  AppBar,
-  Box,
-  Link,
-  List,
-  ListItem,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { AppBar, Box, Link, List, ListItem, Toolbar } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import NavTopBar from "./NavbarTopBar";
 import NavMenu from "./NavMenu";
 import SearchBar from "./SearchBar";
-
-const NavTopBar = () => {
-  const theme = useTheme();
-  return (
-    <>
-      <Box
-        sx={{
-          display: { xs: "none", md: "flex" },
-          justifyContent: "space-between",
-          color: theme.palette.primary.contrastText,
-          paddingX: "184px",
-          paddingY: "0.5rem",
-          alignItems: "center",
-        }}
-      >
-        <Box
-          sx={{
-            color: theme.palette.primary.contrastText,
-            display: { xs: "none", md: "flex" },
-            gap: "1rem",
-            justifyItems: "center",
-            fontSize: "0.875rem",
-          }}
-        >
-          <PhoneCallingIcon width={18} height={18} />
-          {phoneNumber}
-        </Box>
-        <Box
-          sx={{
-            color: theme.palette.primary.contrastText,
-            display: "flex",
-            gap: "1rem",
-          }}
-        >
-          <Typography
-            sx={{
-              display: "flex",
-              gap: "0.5rem",
-              alignItems: "center",
-              ":hover": { color: theme.palette.primary.main },
-              cursor: "pointer",
-            }}
-          >
-            Logowanie
-          </Typography>
-          <Typography
-            sx={{
-              display: "flex",
-              gap: "0.5rem",
-              alignItems: "center",
-              ":hover": { color: theme.palette.primary.main },
-              cursor: "pointer",
-            }}
-          >
-            Rejestracja
-          </Typography>
-        </Box>
-      </Box>
-      <hr style={{ margin: 0, opacity: 0.3 }} />
-    </>
-  );
-};
 
 const Navbar = () => {
   const theme = useTheme();
