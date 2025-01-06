@@ -1,7 +1,15 @@
 import { ArrowIcon } from "@/images/icons";
 import { Autocomplete } from "@mui/material";
 import { Box, useTheme } from "@mui/system";
-const CustomAutocomplete = ({ options }) => {
+type CustomAutocompleteOption = {
+  label: string;
+  [key: string]: any;
+};
+
+type CustomAutocompleteProps = {
+  options: CustomAutocompleteOption[];
+};
+const CustomAutocomplete = ({ options }: CustomAutocompleteProps) => {
   const theme = useTheme();
   return (
     <Autocomplete

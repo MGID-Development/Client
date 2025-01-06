@@ -1,10 +1,23 @@
 import { HeartIcon } from "@/images/icons";
 import { Box, Button, Divider, Typography, useTheme } from "@mui/material";
 
-const ShopItem = ({ item }) => {
+type ShopItemProps = {
+  status: string;
+  img: string;
+  name: string;
+  price: string;
+  oldPrice: string;
+  model: string;
+};
+type Props = {
+  item: ShopItemProps;
+};
+
+const ShopItem = ({ item }: Props) => {
   const theme = useTheme();
   return (
     <Box
+      key={item.name}
       sx={{
         display: "flex",
         flexDirection: "column",

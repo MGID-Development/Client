@@ -1,8 +1,8 @@
-import * as brands from "@/images/brands";
+import { images } from "@/images/brands";
 import { Box } from "@mui/material";
 
 const BrandSlider = () => {
-  const brandImages = Object.keys(brands).map((key) => brands[key]);
+  const brandImages = Object.values(images);
 
   return (
     <Box
@@ -22,12 +22,16 @@ const BrandSlider = () => {
           animation: "scroll 60s linear infinite",
         }}
       >
-        {brandImages.concat(brandImages).map((src, index) => (
+        {[...brandImages, ...brandImages].map((src, index) => (
           <img
-            key={`${src}-${index}`}
+            key={`${index}-${src}`}
             src={src}
-            alt="brand"
-            style={{ width: "100px", height: "100px", objectFit: "contain" }}
+            alt={`Brand logo ${index}`}
+            style={{
+              width: "100px",
+              height: "100px",
+              objectFit: "contain",
+            }}
           />
         ))}
       </Box>
@@ -38,7 +42,7 @@ const BrandSlider = () => {
               transform: translateX(0);
             }
             100% {
-              transform: translateX(-100%);
+              transform: translateX(-50%);
             }
           }
         `}

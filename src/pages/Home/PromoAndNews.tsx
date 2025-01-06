@@ -59,8 +59,8 @@ const PromoAndNews = () => {
             },
           }}
         >
-          {products.map((item, index) => (
-            <ShopItem key={index} item={item} />
+          {products.map((item) => (
+            <ShopItem item={item} />
           ))}
         </Slider>
       </Box>

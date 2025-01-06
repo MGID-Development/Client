@@ -1,6 +1,11 @@
 import useOpen from "@/hooks/useOpen";
 
-const Dropdown = ({ children, trigger }) => {
+type DropdownProps = {
+  children: React.ReactNode;
+  trigger: React.ReactNode;
+};
+
+const Dropdown = ({ children, trigger }: DropdownProps) => {
   const { isOpen, open, close, toggle } = useOpen();
   return (
     <div

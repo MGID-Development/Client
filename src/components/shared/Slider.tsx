@@ -1,12 +1,18 @@
 import { ArrowIcon } from "@/images/icons";
-import { Box } from "@mui/material";
+import { Box, SxProps } from "@mui/material";
 import { Children, useEffect, useState } from "react";
 
-const Slider = ({ children, buttonSx = {}, limit = 3 }) => {
+type SliderProps = {
+  children: React.ReactNode;
+  buttonSx?: SxProps;
+  limit?: number;
+};
+
+const Slider = ({ children, buttonSx = {}, limit = 3 }: SliderProps) => {
   const [current, setCurrent] = useState(0);
   const [width, setWidth] = useState(limit);
   const length = Children.count(children);
-  const [visibleSlides, setVisibleSlides] = useState([]);
+  const [visibleSlides, setVisibleSlides] = useState<React.ReactNode[]>([]);
 
   const nextSlide = () => {
     setCurrent((prev) => (prev + 1) % length);

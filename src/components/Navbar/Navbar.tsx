@@ -103,8 +103,8 @@ const Navbar = () => {
           <Image
             src={Logo}
             alt="Logo"
-            width={215}
-            height={34}
+            width={"215px"}
+            height={"34px"}
             sx={{ cursor: "pointer" }}
           />
           <Box

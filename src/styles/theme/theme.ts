@@ -2,14 +2,14 @@ import { createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
   interface Palette {
-    custom?: {
+    custom: {
       gray: string;
       grayText: string;
     };
   }
 
   interface PaletteOptions {
-    custom?: {
+    custom: {
       gray: string;
       grayText: string;
     };

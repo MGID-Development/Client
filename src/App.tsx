@@ -5,7 +5,7 @@ import "@/styles/css/style.css";
 import theme from "@/styles/theme/theme";
 import { ThemeProvider } from "@mui/material";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { Bounce, ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           draggable={false}
           pauseOnHover={false}
           theme="light"
-          transition="Bounce"
+          transition={Bounce}
         />
         <Router>
           <Routes>

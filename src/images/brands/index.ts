@@ -10,7 +10,7 @@ import Scoda from "./scoda.png";
 import Toyota from "./toyota.png";
 import Volkswagen from "./vw.png";
 
-export {
+export const images = {
   Audi,
   Bmw,
   Chevrolet,
@@ -22,4 +22,4 @@ export {
   Scoda,
   Toyota,
   Volkswagen,
-};
+} as const;
