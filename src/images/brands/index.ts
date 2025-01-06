@@ -1,5 +1,5 @@
 import Audi from "./audi.png";
-import Bmw from "./BMW.png";
+import Bmw from "./bmw.png";
 import Chevrolet from "./chevrolet.png";
 import Ford from "./ford.png";
 import Honda from "./honda.png";

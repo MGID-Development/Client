@@ -1,6 +1,6 @@
 import Authentication from "@/pages/Authentication";
 import Contact from "@/pages/Contact";
-import Home from "@/pages/Home/Home";
+import Home from "@/pages/home/Home";
 import "@/styles/css/style.css";
 import theme from "@/styles/theme/theme";
 import { ThemeProvider } from "@mui/material";

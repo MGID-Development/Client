@@ -6,6 +6,7 @@ import Categories from "./Categories";
 import Filter from "./Filter";
 import Hero from "./Hero";
 import PromoAndNews from "./PromoAndNews";
+
 const Home = () => {
   const theme = useTheme();
   return (
