@@ -165,6 +165,15 @@ const Footer = () => {
           width: "80%",
         }}
       />
+      <Typography
+        variant="body2"
+        sx={{
+          color: theme.palette.primary.contrastText,
+          textAlign: "center",
+        }}
+      >
+        © {new Date().getFullYear()} Auto-Komplet. Wszelkie prawa zastrzeżone.
+      </Typography>
     </Box>
   );
 };
