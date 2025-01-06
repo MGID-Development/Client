@@ -1,6 +1,6 @@
 import CustomAutocomplete from "@/components/shared/Autocomplete";
 import { carBrands } from "@/config/mockups/carBrands";
-import { VenomIcon } from "@/images/icons";
+import { SearchIcon, VenomIcon } from "@/images/icons";
 import { Button, Typography } from "@mui/material";
 import { Box, useTheme } from "@mui/system";
 
@@ -63,9 +63,12 @@ const Filter = () => {
             variant="contained"
             sx={{
               borderRadius: "9999px",
+              display: "flex",
+              alignItems: "center",
+              color: theme.palette.secondary.main,
             }}
           >
-            Szukaj
+            <SearchIcon /> Wyszukaj
           </Button>
         </Box>
       </Box>
