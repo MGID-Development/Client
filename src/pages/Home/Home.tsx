@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import { Box, useTheme } from "@mui/material";
 import BrandSlider from "./BrandSlider";
@@ -19,6 +20,7 @@ const Home = () => {
       <PromoAndNews />
       <Categories />
       <BrandSlider />
+      <Footer />
     </Box>
   );
 };

@@ -4,7 +4,7 @@ import {
   AccountIcon,
   CartIcon,
   FavouriteIcon,
-  PhoneIcon,
+  PhoneCallingIcon,
 } from "@/images/icons";
 import Logo from "@/images/logos/Logo.svg";
 import {
@@ -43,7 +43,7 @@ const NavTopBar = () => {
             fontSize: "0.875rem",
           }}
         >
-          <PhoneIcon width={18} height={18} />
+          <PhoneCallingIcon width={18} height={18} />
           {phoneNumber}
         </Box>
         <Box
