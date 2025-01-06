@@ -30,7 +30,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/auth" element={<Authentication />} />
-            <Route path="/*" element={<div>404</div>} />
+            <Route path="/*" element={<Home />} />
           </Routes>
         </Router>
       </ThemeProvider>
